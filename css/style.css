@@ -1,0 +1,99 @@
+body{
+	font-family: 'PT Sans', sans-serif;
+	width: 768px;
+}
+
+.navigation{
+	font-size: 14px;
+}
+
+.navigation ul,
+.motivation ul{
+	list-style: none;
+}
+
+.navigation a{
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 26px;
+} 
+
+.mainInfo h2{
+	color: #000000;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.motivation p{
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.motivation h2{
+	color: #333333;
+	font-size: 21px;
+	line-height: 21px;
+}
+
+.motivation .bigFeature h2{
+	color:#ffffff;
+}
+
+.motivation p:first-child{
+	color: #333333;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.motivation .about{
+	background-color:#81b3d2;
+}
+
+.motivation .smallFeature p{
+	color: #333333;
+}
+
+.feature:last-child{
+	background-color:#eeeeee; 
+}
+
+.location h2{
+	color:#000000;
+	font-size: 30px;
+	line-height: 24px;
+}
+
+.location p{
+	color:#333333;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.searchHotel h2{
+	background-color: #766357;
+	color:#000000;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.searchHotel label,
+.searchHotel input{
+	font-weight: bold;
+	color:#000000;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.searchHotel input[type="submit"]{
+	background-color: #81b3d2;
+	color:#ffffff;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+
+@font-face {
+    font-family: 'PtSans';
+    src: url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic'); 
