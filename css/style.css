@@ -1,15 +1,17 @@
 body{
 	font-family: 'PT Sans', sans-serif;
-	width: 768px;
 }
 
 .navigation{
 	font-size: 14px;
 }
 
+
 .navigation ul,
 .motivation ul{
 	list-style: none;
+	padding:0px;
+	margin: 0px;
 }
 
 .navigation a{
@@ -94,6 +96,28 @@ body{
 }
 
 
+.itemDescription h2{
+	font-weight: bold;
+	color:#000000;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.itemDescription p{
+	font-weight: bold;
+	color:#333333;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.more-link{
+	background-color: #81b3d2;
+}
+
+
+.reservation-link{
+	background-color: #766357;	
+}
 @font-face {
     font-family: 'PtSans';
     src: url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic'); 
