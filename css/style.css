@@ -129,6 +129,69 @@ body{
 }
 
 
+.searchHotel input[type="submit"]:active{
+	background-color: #5496bd;
+	color:#88b6d1;
+}
+
+.copyRight a{
+		display: inline-block;
+		background: url("img/logo-htmlacademy.svg") 50% 50% no-repeat;
+		width: 120px;
+		height: 43px;
+}
+
+.copyRight a:hover{
+		background-color: #79a8c5;
+}
+
+.copyRight a:active{
+		background-color: #bdbbbc;
+}
+
+a.social{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	background-color: #81b3d2;
+}
+
+a.social:active{
+	background-color: #5496bd;
+}
+
+a.social.tw-btn{
+	background-image: url("img/twitter.svg");
+	background-position: 50% 50%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+a.social.fb-btn{
+	background-image: url("img/fb-icon.svg");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+a.social.yt-btn{
+	background-image: url("img/youtube.svg");
+	background-position: 50% 50%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 @font-face {
     font-family: 'PtSans';
     src: url('https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic'); 

@@ -19,8 +19,10 @@
   	</header>
 
   	<main>
+       <h1 class="visually-hidden">Выбор места для остановки</h1>
        <div class="filter">
         <form method="post" action="">
+         <h2 class="visually-hidden">Выбор параметров поиска места остановки</h2>
          <fieldset class="infrastructure">
             <legend>Инфраструктура:</legend>
             <input type="checkbox" id = "infrastructure-pool" name="pool" value="pool" checked="">
@@ -49,6 +51,7 @@
        </div>
 
        <section class="searchResult">
+          <h2 class="visually-hidden">Результат поиска по вашему запросу</h2>
           <div class="searchResultHeader">
             <div class="sort-count">Найдено: 3</div>
             <ul title="Сортировка">
@@ -118,14 +121,14 @@
   	<footer>
   		<section class="hashTag">#VisitSedona</section>
 
-  		<section class="social">
-          <a href="#" class="social vk-btn" alt="вконтакте"></a>
+  		<section class="socials">
+          <a href="#" class="social tw-btn" alt="Твиттер"></a>
           <a href="#" class="social fb-btn" alt="фейсбук"></a>
           <a href="#" class="social yt-btn" alt="ютуб"></a>
       </section> 
 			
   		<section class="copyRight">
-        <img src="img/logo-htmlacademy.svg" alt="Html academy" width="115" height="41">      
+        <a href="#" alt="Главная страница"></a>       
       </section>
   	</footer>
   </body>
