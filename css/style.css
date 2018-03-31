@@ -200,6 +200,8 @@ header{
 
 
 .location{
+	position: relative;
+	z-index: -2;
 	width: 1200px;
 	margin: 0 auto;
 }
@@ -419,6 +421,11 @@ header{
 	width: 570px;
 }
 
+.search input,
+.search button{
+	border: none;
+}
+
 .search button{
 	color: white;
 	font-size: 30px;
@@ -446,25 +453,6 @@ header{
 	line-height: 26px;
 }
 
-#date-in-field{
-	width: 345px;
-}
-
-#date-out-field{
-	margin-top: 30px;
-	width: 345px;
-}
-
-#man-count-field,
-#child-count-field{
-	text-align: center;
-
-	width: 116px;
-
-	margin-top: 32px;
-	margin-bottom: 55px;
-}
-
 .searchHotel label,
 .searchHotel input{
 	font-weight: bold;
@@ -484,11 +472,120 @@ header{
 	background-color: #81b3d2;
 }
 
-.searchHotel input[type="submit"]:active{
-	background-color: #5496bd;
-	color:#88b6d1;
+#date-in-field{
+	width: 350px;
 }
 
+#date-out-field{
+	width: 350px;
+}
+
+.search{
+	text-transform: uppercase;
+}
+
+.search input:not([type="submit"]){
+	padding: 10px 15px;
+	border: none;
+	background-color: #f2f2f2;
+}
+
+
+.search .date-selector{
+	font-size: 14px;
+	text-transform: uppercase;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.search .date-selector:nth-of-type(2){
+	margin-top: 30px;
+}
+
+.search .date-selector label{
+	display: inline-block;
+	width: 130px;
+	text-align: left;
+	padding-top: 12px;
+}
+
+.search .date-selector input::after{
+	content: "";
+	width: 25px;
+	height: 25px;
+
+	background: url("../img/calendar.svg") 50% 50% no-repeat;
+}
+
+.search .count-selector label{
+	display: inline-block;
+	text-align: left;
+	padding-top: 12px;
+}
+
+.search .count-selector .man-container label{
+	margin-right: 28px;
+}
+
+.search .count-selector .child-container label{
+	margin-right: 25px;
+}
+
+
+.search .count-selector{
+	display: flex;
+	flex-direction: row;
+	margin-top: 32px;
+}
+
+.search .count-selector .child-container{
+	margin-left: auto;
+}
+
+.search .count-selector input{
+	width: 85px;
+}
+
+.search .count-selector + div{
+	width: 180px;
+}
+
+
+.search .count-selector input[type="number"]::after{
+	content: "";
+	width: 25px;
+	height: 25px;
+	background: url("../img/plus.svg") 50% 50% no-repeat;
+
+	background-color: red;
+}
+
+.searchHotel input[type="submit"]{
+	color:white;
+	background-color: #5496bd;
+	margin-top: 40px;
+}
+
+
+.searchHotel input[type="submit"]:active{
+	color:#88b6d1;
+	background-color: #5496bd;
+}
+
+.searchHotel input[type="submit"]:hover{
+	background-color: #669ec0;
+}
+
+.search #showFilter:hover{
+	background-color: #604e43;
+}
+
+.search #showFilter:active{
+	color: #857871;
+	background-color: #503e33;
+}
 
 .itemDescription {
 	display: flex;
@@ -812,6 +909,7 @@ footer{
 	padding-bottom: 35px;
 	padding-left: 133px;
 	padding-right: 102px;
+	background-color: (0, 0, 0, 0.5)
 }
 
 .hashTag{

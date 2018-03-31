@@ -99,16 +99,24 @@
 						<button type="button" id="showFilter" alt="Показать форму поиска">Поиск гостиница в седоне</button>
 						<form class="searchHotel" action="" method="post">
 							<h2 class="visually-hidden">Форма для бронирования гостиницы</h2>
-							<label for="date-field">Дата заезда:</label>
-							<input type="date" name="date-in" id="date-in-field" value="2018-04-24">
-							<br>
-							<label for="date-out-field">Дата выезда:</label>
-							<input type="date" name="date-out" id ="date-out-field" value="2018-07-04">
-							<br>
-							<label for="man-count-field">Взрослые:</label>
-							<input type="number" id="man-count-field" name="manCount" step="1" min="0" value="2">
-							<label for="child-count-field">Дети:</label>
-							<input type="number" id="child-count-field" name="childCount" step="1" min="0" value="0">
+							<div class="date-selector">
+								<label for="date-field">Дата заезда:</label>
+								<input type="date" name="date-in" id="date-in-field" value="2018-04-24">	
+							</div>
+							<div class="date-selector"> 
+								<label for="date-out-field">Дата выезда:</label>
+								<input type="date" name="date-out" id ="date-out-field" value="2018-07-04">	
+							</div>
+							<div class="count-selector">
+								<div class="man-container">
+									<label for="man-count-field">Взрослые:</label>
+									<input type="number" id="man-count-field" name="manCount" step="1" min="0" value="2">	
+								</div>
+								<div class="child-container">
+									<label for="child-count-field">Дети:</label>
+									<input type="number" id="child-count-field" name="childCount" step="1" min="0" value="0">	
+								</div>
+							</div>
 							<br>
 							<input type="submit" name="submit" id = "search-submit" value="Найти">
 						</form>	
@@ -125,7 +133,7 @@
   	</main>
 
   	<footer>
-	  	<section class="hashTag">#VisitSedona</section>
+      <section class="hashTag">#VisitSedona</section>
 
       <section class="socials">
          <h2 class="visually-hidden">Социальные сети</h2>
@@ -136,8 +144,9 @@
       
       <section class="copyRight"> 
         <p>WEBSITE BY</p>
-        <a href="#" alt="Главная страница"><img src="img/logo-htmlacademy.svg"  alt="Логотип"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" alt="Главная страница"></a>
       </section>
+  		
   	</footer>
   </body>
 </html>
