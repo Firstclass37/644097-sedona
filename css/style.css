@@ -29,6 +29,14 @@ header{
 	padding-bottom: 20px;
 }
 
+.navigation a:hover{
+	color: #89b8d5;
+}
+
+.navigation a:active{
+	color: #c7c7c7;
+}
+
 .navigation ul{
 	display: flex;
 	justify-content: space-around;
@@ -235,33 +243,96 @@ header{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	align-items: center;
-	padding: 35px 0;
+	align-items: baseline;
+	padding: 45px 0;
+
+	text-transform: uppercase;
 }
 
 .searchResultHeader .sortDir{
 	margin-left: auto;
+}
 
-	background-color: red;
+.searchResultHeader .sortDir .sort-up{
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background: url("../img/sortDir-state2.svg") 50% 50% no-repeat;
+}
+
+.searchResultHeader .sortDir .sort-down{
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		background: url("../img/sortDir-state2.svg") 50% 50% no-repeat;
+		transform: rotate(180deg);
+		margin-left: 10px;
+}
+
+.searchResultHeader .sortDir .sort-up:active{
+		background: url("../img/sortDir-state1.svg") 50% 50% no-repeat;
+}
+
+.searchResultHeader .sortDir .sort-down:active{
+		background: url("../img/sortDir-state1.svg") 50% 50% no-repeat;
+		transform: rotate(180deg);
+}
+
+.searchResultHeader .sortDir .sort-up:hover{
+		background: url("../img/sortDir.svg") 50% 50% no-repeat;
+}
+
+.searchResultHeader .sortDir .sort-down:hover{
+		background: url("../img/sortDir.svg") 50% 50% no-repeat;
+		transform: rotate(180deg);
+}
+
+
+
+.searchResultHeader .sortingCrit{
+	width: 530px;
+	display: flex;
+}
+
+.searchResultHeader .sortingCrit p{
+	display: inline-block;
+	padding: 0;
+	margin: 0;
 }
 
 .searchResultHeader li{
+	color: #b2b2b2;
+	border-bottom: 1px dotted #81b3d2;
+
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	display: inline-block;
-	margin-right: 36px;
+	margin-right: 33px;
 }
+
+.searchResultHeader li:hover{
+	color: #81b3d2;
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.searchResultHeader li:active{
+	color: black;
+	border: none;
+}
+
+
+
 
 .searchResultHeader ul{
 	list-style: none;
 	padding: 0;
 	margin: 0;
-
-	margin-left: 50px;
+	margin-left: auto;
 }
 
 .searchResultHeader .sort-count{
+	width: 163px;
 	display: inline-block;
 	font-size: 21px;
 	line-height: 26px;
@@ -303,20 +374,37 @@ header{
 .item .rating .stars{
 	width: 110px;
 	height: 20px;
-
+	align-self: flex-end;
 	background-color: red;
 }
 
+.item .rating .stars.star-4{
+	background: url("../img/star.svg") 0 0 repeat-x;
+	width: 75px;
+}
+
+.item .rating .stars.star-3{
+	background: url("../img/star.svg") 0 0 repeat-x;
+	width: 55px;
+}
+
+.item .rating .stars.star-2{
+	background: url("../img/star.svg") 0 0 repeat-x;
+	width: 35px;
+}
+
+
 .item .rating .ratingDescription{
-	width: 110px;
 	text-transform: uppercase;
 	font-size: 14px;
+	align-self: flex-end;
 	text-align: center;
 	margin-top: auto;
 	padding: 7px 0;
 }
 
 .item .rating .ratingDescription p{
+	display: inline-block;
 	margin: 0;
 	padding: 0;
 }
@@ -448,33 +536,33 @@ header{
 }
 
 
-.itemDescription .links a:first-child{
+.itemDescription .links a.more-link{
 	width: 110px;
 }
 
-.itemDescription .links a:last-child{
+.itemDescription .links a.reservation-link{
 	width: 142px;
 	margin-left: 8px;
 }
 
-.itemDescription .links a:first-child:active{
+.itemDescription .links a.more-link:active{
+	color: #5496bd;
 	background-color: #5496bd;
-	color: #88b6d1;
 }
 
-.itemDescription .links a:first-child:hover{
+.itemDescription .links a.more-link:hover{
+	color: white;
 	background-color: #669ec0;
-	color: white;
 }
 
-.itemDescription .links a:last-child:active{
-	background-color: #503e33;
+.itemDescription .links a.reservation-link:active{
 	color: #857871;
+	background-color: #503e33;
 }
 
-.itemDescription .links a:last-child:hover{
-	background-color: #604e43;
+.itemDescription .links a.reservation-link:hover{
 	color: white;
+	background-color: #604e43;
 }
 
 
@@ -682,11 +770,10 @@ footer{
 	align-items: center;
 	width: 965px;
 	margin: 0 auto;
-	padding-top: 35px;
+	padding-top: 40px;
 	padding-bottom: 35px;
 	padding-left: 133px;
 	padding-right: 102px;
-	background-color: red;
 }
 
 .hashTag{
@@ -701,6 +788,7 @@ footer{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	position: relative;
 }
 
 .copyRight p{
@@ -716,12 +804,22 @@ footer{
 	padding-top: 5px;
 }
 
-.copyRight a:hover{
-		background-color: #79a8c5;
+.copyRight a::after{
+	content: "";
+  position: absolute;
+  background: url(../img/logo-htmlacademy.svg) 50% 50% no-repeat;
+  display: block;
+  top: -45px;
+  height: 117px;
+  width: 80%;
 }
 
-.copyRight a:active{
-		background-color: #bdbbbc;
+.copyRight a:hover:after{
+  background: url("../img/logo-htmlacademy-state-1.svg") 50% 50% no-repeat;
+}
+
+.copyRight a:active:after{
+  background: url("../img/logo-htmlacademy-state-2.svg") 50% 50% no-repeat;
 }
 
 .socials{
