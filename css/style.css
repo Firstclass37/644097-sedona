@@ -628,13 +628,51 @@ fieldset {
 	padding: 30px 70px;
 }
 
+
+
 .loading,
 .infrastructure{
-	display: flex;
-	justify-content: space-between;
-	flex-direction: column;
 	width: 255px;
 }
+
+.loading div:first-of-type,
+.infrastructure div:first-of-type{
+	margin-top: 25px;
+}
+
+.loading div:not(:first-of-type),
+.infrastructure div:not(:first-of-type){
+	margin-top: 22px;
+}
+
+.checkboxs div{
+	margin-left: 44px;
+}
+
+.checkboxs label {
+    position: relative;
+    cursor: pointer;
+}
+
+.checkboxs label::before {
+    position: absolute;
+    top: -4px;
+    left: -40px;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+    content: '';
+    background: url("../img/checkbox-off.svg") 50% 50% no-repeat;
+}
+
+.checkboxs input[type="checkbox"] {
+    display: none;
+}
+
+.checkboxs input[type="checkbox"]:checked ~ label::before {
+    background: url("../img/checkbox-on.svg") 50% 50% no-repeat;
+}
+
 
 .filter-range {
   width: 330px;
