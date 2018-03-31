@@ -739,6 +739,11 @@ a.social:active{
 	background-color: #5496bd;
 }
 
+a.social:hover{
+	background-color: #669ec0;
+}
+
+
 a.social.tw-btn{
 	background-image: url("../img/twitter.svg");
 	background-position: 50% 50%;
