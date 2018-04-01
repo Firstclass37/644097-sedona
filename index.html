@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -17,19 +18,21 @@
 	  </nav>
 
 	  <img class="logo" src="img/logo.png" alt="Логотип">
-
 	  <section class="mainInfo">
-	  	<img src="img/mainPhoto.jpg" class="mainPhoto" alt="Основное фото" height="550px" width="100%">
-			<h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+	  	<img src="img/mainPhoto.jpg" class="mainPhoto" alt="Основное фото" height="510px" width="100%">
+	  	<img src="img/logo-backline.png" class="backlike-img" alt="Бэклайн фото">
+	  	<div class="main-text">
+		  	<h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+				<div class="motivationInfo">
+					<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+				</div>	
+	  	</div>
 	  </section>
 	</header>
   	
 	<main>
 		<section class="motivation">
-			<h2 class="visually-hidden">Основные преимущества Седоны</h2>
-			<div class="motivationInfo">
-				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-			</div>
+			<h2 class="visually-hidden">Основные преимущества Седоны</h2>			
 			<ul class="features">
 			  <li class="feature">
 					<div class="bigFeature">
@@ -56,7 +59,7 @@
 					<article class="smallFeature">
 						<img src="img/icon-3.svg" alt="Сувениры" width="80" height="80">
 						<h2>Сувениры</h2>
-						<p>Сувенирыs не только китайского, но и местного <br>производства!</p>
+						<p>Сувениры не только китайского, но и местного <br>производства!</p>
 					</article>
 				</li>
 
@@ -124,29 +127,23 @@
 			</section>
 
 			<section class="location">
-				<img src="img/map.jpg" alt="Карта" width="100%">
+				<img src="img/map.jpg" alt="Карта">
 			</section>
-				
-			
-			
-
   	</main>
 
-  	<footer>
-      <section class="hashTag">#VisitSedona</section>
-
-      <section class="socials">
-         <h2 class="visually-hidden">Социальные сети</h2>
-         <a href="#" class="social tw-btn" alt="Твиттер"></a>
-         <a href="#" class="social fb-btn" alt="фейсбук"></a>
-         <a href="#" class="social yt-btn" alt="ютуб"></a>
-      </section> 
-      
-      <section class="copyRight"> 
-        <p>WEBSITE BY</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" alt="Главная страница"></a>
-      </section>
-  		
+  	<footer class="main-footer">
+  			<section class="hashTag">#VisitSedona</section>
+	      <section class="socials">
+	         <h2 class="visually-hidden">Социальные сети</h2>
+	         <a href="#" class="social tw-btn" alt="Твиттер"></a>
+	         <a href="#" class="social fb-btn" alt="фейсбук"></a>
+	         <a href="#" class="social yt-btn" alt="ютуб"></a>
+	      </section> 
+	      
+	      <section class="copyRight"> 
+	        <p>WEBSITE BY</p>
+	        <a href="https://htmlacademy.ru/intensive/htmlcss" alt="Главная страница"></a>
+	      </section>       		
   	</footer>
   </body>
 </html>

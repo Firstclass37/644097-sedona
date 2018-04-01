@@ -1,8 +1,10 @@
+
 body{
 	font-family: 'PT Sans', sans-serif;
 	background-color: #f2f2f2;
 	width: 1280px;
 	margin: 0 auto;
+	position: relative;
 }
 
 header{
@@ -77,12 +79,45 @@ header{
 	padding:0px;
 } 
 
+.mainInfo{
+	position: relative;
+}
+
+.mainInfo .backlike-img{
+	position: absolute;
+	width: 1200px;
+	height: 57px;
+	top: 499px;
+	right: 0;
+}
+
 .mainInfo h2{
 	color: #000000;
 	font-size: 21px;
 	line-height: 26px;
 }
 
+.mainInfo img{
+	height: 100%;
+	width: 100%;
+}
+
+.mainInfo .main-text{
+	padding-top: 65px;
+	padding-bottom: 60px;
+	position: absolute;
+	bottom: -10px;
+	background-color: white;
+}
+
+.mainInfo .main-text p{
+	padding: 0;
+	margin:0;
+	color: #9e9e9e;
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: uppercase;
+}
 
 .motivation{
 	width: 1200px;
@@ -93,15 +128,6 @@ header{
 .motivationInfo{
 	width: 1200px;
 	text-align: center;
-	padding-top:20px; 
-	padding-bottom:60px;
-}
-
-.motivationInfo p{
-	color: #ffffff;
-	font-size: 14px;
-	line-height: 21px;
-	margin: 0;
 }
 
 .motivation h2{
@@ -214,9 +240,7 @@ header{
 	width: 1200px;
 	margin: 0 auto;
 	padding-top: 60px;
-	padding-bottom: 140px;
-
-	background-color: red;
+	padding-bottom: 100px;
 }
 
 .interesting h2{
@@ -416,7 +440,7 @@ header{
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	bottom: -394px;
+	bottom: -413px;
 
 	width: 570px;
 }
@@ -428,11 +452,11 @@ header{
 
 .search button{
 	color: white;
-	font-size: 30px;
-	line-height: 24px;
+	font-size: 21px;
+	text-transform: uppercase;
 
 	width: 100%;
-	padding: 35px 0;
+	padding: 33px 0;
 
 	background-color: #766357;
 }
@@ -485,7 +509,7 @@ header{
 }
 
 .search input:not([type="submit"]){
-	padding: 10px 15px;
+	padding: 5px 15px;
 	border: none;
 	background-color: #f2f2f2;
 }
@@ -537,7 +561,7 @@ header{
 .search .count-selector{
 	display: flex;
 	flex-direction: row;
-	margin-top: 32px;
+	margin-top: 30px;
 }
 
 .search .count-selector .child-container{
@@ -699,6 +723,8 @@ header{
 	width: 136px;
 	height: 90px;
 }
+
+
 
 fieldset {
     border: 0;
@@ -899,6 +925,12 @@ fieldset {
   background: #ffffff;
 }
 
+
+.location img{
+	position: relative;
+}
+
+
 footer{
 	display: flex;
 	justify-content:space-between;
@@ -909,7 +941,13 @@ footer{
 	padding-bottom: 35px;
 	padding-left: 133px;
 	padding-right: 102px;
-	background-color: (0, 0, 0, 0.5)
+}
+
+.main-footer{
+	position: absolute;
+	bottom: 0;	
+	right: 38px;
+	background-color: rgba(253, 253, 253, 0.9);
 }
 
 .hashTag{
