@@ -22,6 +22,7 @@ header{
 	position: absolute;
 	top:0;
 	left: 550px;
+	z-index: 10;
 }
 
 .navigation{
@@ -192,8 +193,8 @@ header{
 
 .feature:nth-child(1) .bigFeature img,
 .feature:nth-child(3) .bigFeature img{
-	width: 800px;
-	height: 260px;
+	width: 100%;
+	margin-top:-65px;
 }
 
 .feature:nth-child(1) .bigFeature{
@@ -206,6 +207,11 @@ header{
 	flex-direction: row;
 }
 
+.image-containter{
+	width: 800px;
+	height: 100%;
+	overflow: hidden;
+}
 
 
 
