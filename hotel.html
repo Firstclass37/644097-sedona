@@ -3,25 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   	<header>
   		<nav class="navigation">
   			<ul>
-	  			<li><a href="#" alt="инфомрмация">Инфомрмация</a></li>
+	  			<li><a href="#" alt="инфомрмация">Информация</a></li>
 	  			<li><a href="#" alt="фото и видео">Фото и видео</a></li>
 	  			<li><a href="#" alt="карта штата">Карта штата</a></li>
 	  			<li><a href="#" alt="rостиницы">Гостиницы</a></li>
   			</ul>	
   		</nav>
-  	<img src="img/logo.png" class="logo" alt="Логотип">
+  	<a href="index.html"><img src="img/logo.png" class="logo" alt="Логотип"></a>
   	</header>
 
   	<main>
        <div class="filter">
         <form method="post" action="" class="mainFilter">
-         <fieldset class="infrastructure">
+         <fieldset class="checkboxs infrastructure">
             <legend>Инфраструктура:</legend>
             <div>
               <input type="checkbox" id = "infrastructure-pool" name="pool" value="pool" checked="">
@@ -36,7 +37,7 @@
               <label for="infrastructure-wifi">Wi-Fi</label>
             </div>           
          </fieldset>
-         <fieldset class="loading">
+         <fieldset class="checkboxs loading">
             <legend>Тип жилья:</legend>
             <div>
               <input type="checkbox" id = "loading-hotel" name="hotel" value="hotel" checked>
@@ -73,16 +74,19 @@
           <div class="searchResultHeader">
             <h2 class="visually-hidden">Результат поиска по вашему запросу</h2>
             <div class="sort-count">Найдено: 3</div>
-            <ul title="Сортировка">
-              <li>По цене</li>
-              <li>По типу</li>
-              <li>По рейтингу</li>
-            </ul>
-            <div class="sortDir">
-              <a href="sort-up" href="#" alt="сортировка возрастание"></a>
-              <a href="sort-down" href="#" alt="сортировка убывание"></a>
+            <div class="sortingCrit">
+              <p>Сортировка:</p>
+              <ul title="Сортировка">
+                <li>По цене</li>
+                <li>По типу</li>
+                <li>По рейтингу</li> 
+              </ul>
             </div>
-          </div>
+            <div class="sortDir">
+              <a href="#" class="sort-up" alt="сортировка возрастание"></a>
+              <a href="#" class="sort-down" alt="сортировка убывание"></a>
+            </div>
+          </div>     
 
           <article class="item">
             <img class="preview" src="img/preview-1.png" alt="Гостиница">  
@@ -98,7 +102,7 @@
               </div>
             </div>
             <div class="rating">
-              <div class="stars"></div>
+              <div class="stars star-4"></div>
               <div class="ratingDescription">
                 <p>Рейтинг: 8,5</p>
             </div>
@@ -118,7 +122,7 @@
               </div>
             </div>
             <div class="rating">
-              <div class="stars"></div>
+              <div class="stars star-3"></div>
               <div class="ratingDescription">
                 <p>Рейтинг: 8,9</p>
               </div>
@@ -139,7 +143,7 @@
               </div>
             </div>
             <div class="rating">
-              <div class="stars"></div>
+              <div class="stars star-2"></div>
               <div class="ratingDescription">
                 <p>Рейтинг: 9,2</p>
               </div>
@@ -160,7 +164,7 @@
       
       <section class="copyRight"> 
         <p>WEBSITE BY</p>
-        <a href="#" alt="Главная страница"><img src="img/logo-htmlacademy.svg"  alt="Логотип"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" alt="Главная страница"></a>
       </section>
   		
   	</footer>
